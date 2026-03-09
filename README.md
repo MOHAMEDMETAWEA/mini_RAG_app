@@ -45,6 +45,8 @@ Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
 
 ```bash
 $ cd docker
+docker compose up -d
+docker stop $(docker ps -aq)
 $ cp .env.example .env
 ```
 
@@ -54,6 +56,7 @@ $ cp .env.example .env
 
 ```bash
 $ cd docker
+fix
 $ sudo docker compose up -d
 ```
 
