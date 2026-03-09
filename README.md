@@ -45,11 +45,6 @@ Set your environment variables in the `.env` file. Like `OPENAI_API_KEY` value.
 
 ```bash
 $ cd docker
-# Stop containers and REMOVE the volume (WARNING: This deletes existing DB data)
-docker-compose down -v
-# Start the container again (it will now pick up the fixed admin/admin without spaces)
-docker-compose up -d
-docker stop $(docker ps -aq)
 $ cp .env.example .env
 ```
 
@@ -59,7 +54,6 @@ $ cp .env.example .env
 
 ```bash
 $ cd docker
-fix
 $ sudo docker compose up -d
 ```
 
